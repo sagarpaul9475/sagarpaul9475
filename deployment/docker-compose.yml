@@ -1,0 +1,123 @@
+version: '3.8'
+
+services:
+  # MongoDB Database
+  mongodb:
+    image: mongo:6.0
+    container_name: ccrp-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password123
+      MONGO_INITDB_DATABASE: cognitive_retraining
+    volumes:
+      - mongodb_data:/data/db
+      - ./mongo-init:/docker-entrypoint-initdb.d
+    networks:
+      - ccrp-network
+
+  # Backend API Server
+  backend:
+    build:
+      context: ../backend
+      dockerfile: Dockerfile
+    container_name: ccrp-backend
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      NODE_ENV: production
+      PORT: 5000
+      MONGODB_URI: mongodb://admin:password123@mongodb:27017/cognitive_retraining?authSource=admin
+      JWT_SECRET: your_super_secret_jwt_key_change_in_production
+      JWT_EXPIRE: 7d
+      CORS_ORIGIN: http://localhost:3000
+      EMAIL_HOST: smtp.gmail.com
+      EMAIL_PORT: 587
+      EMAIL_USER: your_email@gmail.com
+      EMAIL_PASS: your_app_password
+    depends_on:
+      - mongodb
+    volumes:
+      - backend_uploads:/app/uploads
+    networks:
+      - ccrp-network
+
+  # Frontend React Application
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    container_name: ccrp-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    environment:
+      REACT_APP_API_URL: http://localhost:5000/api
+    depends_on:
+      - backend
+    networks:
+      - ccrp-network
+
+  # EEG Integration Service
+  eeg-service:
+    build:
+      context: ../eeg-integration
+      dockerfile: Dockerfile
+    container_name: ccrp-eeg-service
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      NODE_ENV: production
+      PORT: 8080
+      API_URL: http://backend:5000/api
+      EEG_DEVICE_PORT: /dev/ttyUSB0
+      EEG_BAUD_RATE: 115200
+    depends_on:
+      - backend
+    devices:
+      - "/dev/ttyUSB0:/dev/ttyUSB0"  # EEG device connection
+    networks:
+      - ccrp-network
+
+  # Redis for Session Management and Caching
+  redis:
+    image: redis:7-alpine
+    container_name: ccrp-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - ccrp-network
+
+  # Nginx Reverse Proxy
+  nginx:
+    image: nginx:alpine
+    container_name: ccrp-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/ssl:/etc/nginx/ssl
+      - ./nginx/logs:/var/log/nginx
+    depends_on:
+      - frontend
+      - backend
+    networks:
+      - ccrp-network
+
+volumes:
+  mongodb_data:
+  redis_data:
+  backend_uploads:
+
+networks:
+  ccrp-network:
+    driver: bridge
