@@ -1,34 +1,53 @@
-<h1 align="center">Hi 👋, I'm Sagar paul</h1>
-<h3 align="center">A passionate Engineer from India</h3>
-<img align="right" alt="coding" width="400" src="https://user-images.githubusercontent.com/55389276/140866485-8fb1c876-9a8f-4d6a-98dc-08c4981eaf70.gif">
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=sagarpaul9475&label=Profile%20views&color=0e75b6&style=flat" alt="sagarpaul9475" /> </p>
+# Computerized Cognitive Retraining Program (CCRP)
+## SIH 2025 - Smart India Hackathon Project
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=sagarpaul9475" alt="sagarpaul9475" /></a> </p>
+### 🧠 Project Overview
+A comprehensive web-based platform that combines EEG neurofeedback with home-based cognitive training for children with developmental disabilities. This system enables clinicians to monitor progress remotely while providing engaging, personalized training modules for children.
 
-<p align="left"> <a href="https://twitter.com/sagar paul" target="blank"><img src="https://img.shields.io/twitter/follow/sagar paul?logo=twitter&style=for-the-badge" alt="sagar paul" /></a> </p>
+### 🎯 Key Features
+- **EEG Neurofeedback Integration**: Real-time brainwave monitoring and feedback
+- **Cognitive Training Modules**: Interactive games targeting attention, memory, reasoning, and problem-solving
+- **Clinical Dashboard**: Remote monitoring and progress tracking for therapists
+- **Home Training Interface**: Child-friendly interface for independent practice
+- **Progress Analytics**: Detailed reports combining EEG data and training performance
+- **Multi-user Support**: Separate interfaces for children, parents, and clinicians
 
-- 🌱 I’m currently learning **DSA and Mobile App Development.**
+### 🏗️ Technology Stack
+- **Frontend**: React.js with TypeScript, Material-UI
+- **Backend**: Node.js with Express.js
+- **Database**: MongoDB with Mongoose ODM
+- **Real-time Communication**: Socket.IO
+- **EEG Integration**: Web Serial API for hardware communication
+- **Data Visualization**: Chart.js and D3.js
+- **Authentication**: JWT-based authentication system
 
-- 📫 How to reach me **sagarpaul9475@gmail.com**
+### 📁 Project Structure
+```
+cognitive-retraining-platform/
+├── frontend/                 # React frontend application
+├── backend/                  # Node.js backend API
+├── eeg-integration/          # EEG hardware integration modules
+├── training-modules/         # Cognitive training game modules
+├── docs/                     # Documentation and guides
+└── deployment/              # Docker and deployment configurations
+```
 
-- ⚡ Fun fact **I am funny 😅**
+### 🚀 Quick Start
+1. Clone the repository
+2. Install dependencies: `npm run install-all`
+3. Start development servers: `npm run dev`
+4. Access the application at `http://localhost:3000`
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://twitter.com/sagar paul" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="sagar paul" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/sagar(paul)paul" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="sagar(paul)paul" height="30" width="40" /></a>
-<a href="https://stackoverflow.com/users/sagar paul" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="sagar paul" height="30" width="40" /></a>
-<a href="https://instagram.com/jangosagar_69" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="jangosagar_69" height="30" width="40" /></a>
-<a href="https://www.youtube.com/c/aqua guy" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="aqua guy" height="30" width="40" /></a>
-<a href="https://www.codechef.com/users/sagarpaul9475" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg" alt="sagarpaul9475" height="30" width="40" /></a>
-<a href="https://www.hackerrank.com/@sagarpaul9475" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="@sagarpaul9475" height="30" width="40" /></a>
-</p>
+### 👥 Target Users
+- **Children with Developmental Disabilities**: Primary users engaging with training modules
+- **Parents/Caregivers**: Monitor child's progress and assist with home training
+- **Clinicians/Therapists**: Professional monitoring, assessment, and treatment planning
+- **Researchers**: Data analysis and treatment effectiveness studies
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://kotlinlang.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
+### 🏆 SIH 2025 Innovation
+This project addresses the critical need for accessible, technology-enhanced cognitive rehabilitation by combining cutting-edge neurofeedback technology with engaging, evidence-based training protocols.
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=sagarpaul9475&show_icons=true&locale=en&layout=compact" alt="sagarpaul9475" /></p>
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=sagarpaul9475&show_icons=true&locale=en" alt="sagarpaul9475" /></p>
-
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=sagarpaul9475&" alt="sagarpaul9475" /></p>
+---
+**Team**: Sagar Paul & Contributors  
+**Contact**: sagarpaul9475@gmail.com  
+**License**: MIT License

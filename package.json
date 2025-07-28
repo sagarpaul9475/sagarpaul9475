@@ -1,0 +1,38 @@
+{
+  "name": "cognitive-retraining-platform",
+  "version": "1.0.0",
+  "description": "Computerized Cognitive Retraining Program for Home Training of Children with Disabilities",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd frontend && npm start",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "test": "npm run test:frontend && npm run test:backend",
+    "test:frontend": "cd frontend && npm test",
+    "test:backend": "cd backend && npm test"
+  },
+  "keywords": [
+    "cognitive-training",
+    "eeg-neurofeedback",
+    "disability-support",
+    "healthcare",
+    "rehabilitation",
+    "sih2025"
+  ],
+  "author": "Sagar Paul <sagarpaul9475@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sagarpaul9475/cognitive-retraining-platform"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
