@@ -1,0 +1,43 @@
+{
+  "name": "cognitive-retraining",
+  "version": "1.0.0",
+  "description": "Computerized cognitive retraining program for children with disabilities - SIH 2025",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\" \"npm run dev:eeg\"",
+    "dev:frontend": "cd frontend && npm start",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:eeg": "cd eeg-processor && python app.py",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install && cd ../eeg-processor && pip install -r requirements.txt",
+    "build": "cd frontend && npm run build",
+    "test": "npm run test:frontend && npm run test:backend && npm run test:eeg",
+    "test:frontend": "cd frontend && npm test",
+    "test:backend": "cd backend && npm test",
+    "test:eeg": "cd eeg-processor && python -m pytest",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "keywords": [
+    "cognitive-retraining",
+    "eeg",
+    "neuro-feedback",
+    "disability",
+    "therapy",
+    "children",
+    "sih2025"
+  ],
+  "author": "Sagar Paul",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/cognitive-retraining.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/cognitive-retraining/issues"
+  },
+  "homepage": "https://github.com/your-username/cognitive-retraining#readme"
+}
