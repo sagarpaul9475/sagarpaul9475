@@ -105,9 +105,9 @@
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=sagarpaul&theme=tokyonight&hide_border=true" height="165" />
 </p>
 
-<p align="center">
+<!-- <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sagarpaul&layout=compact&theme=tokyonight&hide_border=true" height="165" />
-</p>
+</p> -->
 
 <hr/>
 
