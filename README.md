@@ -1,122 +1,52 @@
-<h1 align="center">🌟 Hi, I'm <b>Sagar Paul</b>!</h1>
-<h3 align="center">🚀 App Developer | Full-Stack Developer | Programmer</h3>
+# GitHub Action for generating a contribution graph with a snake eating your contributions.
+name: Generate Snake
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=22&center=true&width=600&lines=Android+Developer;Full-Stack+Developer;Competitive+Programmer;Firebase+%7C+React+%7C+Node.js+%7C+MongoDB" />
-</p>
+# Controls when the action will run.
+on:
+  schedule:
+      # every 12 hours
+    - cron: "0 */12 * * *"
 
-<hr/>
+  # This command allows us to run the Action automatically from the Actions tab.
+  workflow_dispatch:
+  
+  # Also run on every push on the master branch
+  push:
+    branches:
+    - main
 
-<h2>🛠️ Tech Stack</h2>
+# The sequence of runs in this workflow:
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
-<h3>📱 Mobile Development</h3>
-<ul>
-  <li>Kotlin, Java</li>
-  <li>Android Studio, Jetpack Compose, XML</li>
-  <li>Firebase (Auth, Firestore, Realtime DB, Storage)</li>
-  <li>React Native</li>
-</ul>
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v3
+    
+      - name: Generate the snake files in './dist/'
+        uses: Platane/snk@v3
+        id: snake-gif
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+        env:
+           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-<h3>🎨 Frontend</h3>
-<ul>
-  <li>React.js</li>
-  <li>HTML, CSS, JavaScript</li>
-</ul>
+      - name: Show build status
+        run: git status
 
-<h3>🖥 Backend</h3>
-<ul>
-  <li>Node.js, Express.js</li>
-  <li>Spring Boot</li>
-  <li>PHP, MySQL</li>
-</ul>
-
-<h3>🗄 Database</h3>
-<ul>
-  <li>MongoDB</li>
-  <li>Firebase</li>
-  <li>MySQL</li>
-</ul>
-
-<h3>⚙ Tools</h3>
-<ul>
-  <li>Git & GitHub</li>
-  <li>Postman</li>
-  <li>VSCode, IntelliJ, Android Studio</li>
-  <li>XAMPP</li>
-</ul>
-
-<hr/>
-
-<h2>📌 About Me</h2>
-<ul>
-  <li>🎯 Passionate Android developer</li>
-  <li>🔭 Working on full-stack travel & hotel management systems</li>
-  <li>📚 Solving DSA in Java & C</li>
-  <li>🏆 Smart India Hackathon 2024 (Team Bug Busters)</li>
-  <li>🥇 Gold badges in Python, Java, C (HackerRank)</li>
-  <li>⭐ 4-star SQL on HackerRank</li>
-</ul>
-
-<hr/>
-
-<h2>💼 Highlighted Projects</h2>
-
-<h3>📱 ChatStar — Chat App</h3>
-<ul>
-  <li>Firebase Auth + Realtime Database</li>
-  <li>Real-time messaging</li>
-  <li>Custom RecyclerView chat UI</li>
-</ul>
-
-<h3>🎵 Music Player App</h3>
-<ul>
-  <li>MediaStore integration</li>
-  <li>Full playback controls</li>
-  <li>Circular playlist</li>
-</ul>
-
-<h3>📚 Notes App (Firebase)</h3>
-<ul>
-  <li>CRUD with Firestore</li>
-  <li>Fragments for Add/Edit/Home</li>
-  <li>MVVM + Repository</li>
-</ul>
-
-<h3>✈ Travel Website (Full-stack)</h3>
-<ul>
-  <li>Node.js + Express.js + MongoDB</li>
-  <li>Login & sign-up with unique ID</li>
-  <li>Travel receipt generator</li>
-  <li>Admin panel + API integration</li>
-</ul>
-
-<hr/>
-
-<h2>🏆 Achievements</h2>
-<ul>
-  <li>Smart India Hackathon 2024 — Cleared Pre-screen & Round 1</li>
-  <li>Gold Badge: Python, Java, C</li>
-  <li>4-Star SQL on HackerRank</li>
-  <li>100% runtime on multiple LeetCode problems</li>
-  <li>Built 10+ real-world projects</li>
-</ul>
-
-<hr/>
-
-<h2>📊 GitHub Stats</h2>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sagarpaul&show_icons=true&theme=tokyonight&hide_border=true" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sagarpaul&layout=compact&theme=tokyonight&hide_border=true" height="165" />
-</p>
-
-<hr/>
-
-<h2>💬 Let's Connect</h2>
-<ul>
-  <li>Email: <b>your-email@example.com</b></li>
-  <li>LinkedIn: <i>Add your link</i></li>
-  <li>Portfolio: <i>Add your website</i></li>
-</ul>
-
-<p align="center">⭐ Feel free to star my repositories!</p>
+      - name: Push new files to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: Update snake animations
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
