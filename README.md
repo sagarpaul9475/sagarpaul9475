@@ -120,10 +120,10 @@
 <hr/>
 
 <!-- Trophies -->
-<h2>🏆 GitHub Trophies</h2>
+<!-- <h2>🏆 GitHub Trophies</h2>
 <p align="center">
   <img src="[https://github-profile-trophy.vercel.app/?username=sagarpaul&theme=tokyonight&margin-w=10](https://github.com/users/sagarpaul9475/achievements/yolo)" />
-</p>
+</p> -->
 
 <hr/>
 
