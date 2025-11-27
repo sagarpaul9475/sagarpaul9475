@@ -1,53 +1,122 @@
-# Computerized Cognitive Retraining Program (CCRP)
-## SIH 2025 - Smart India Hackathon Project
+<h1 align="center">🌟 Hi, I'm <b>Sagar Paul</b>!</h1>
+<h3 align="center">🚀 App Developer | Full-Stack Developer | Programmer</h3>
 
-### 🧠 Project Overview
-A comprehensive web-based platform that combines EEG neurofeedback with home-based cognitive training for children with developmental disabilities. This system enables clinicians to monitor progress remotely while providing engaging, personalized training modules for children.
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?size=22&center=true&width=600&lines=Android+Developer;Full-Stack+Developer;Competitive+Programmer;Firebase+%7C+React+%7C+Node.js+%7C+MongoDB" />
+</p>
 
-### 🎯 Key Features
-- **EEG Neurofeedback Integration**: Real-time brainwave monitoring and feedback
-- **Cognitive Training Modules**: Interactive games targeting attention, memory, reasoning, and problem-solving
-- **Clinical Dashboard**: Remote monitoring and progress tracking for therapists
-- **Home Training Interface**: Child-friendly interface for independent practice
-- **Progress Analytics**: Detailed reports combining EEG data and training performance
-- **Multi-user Support**: Separate interfaces for children, parents, and clinicians
+<hr/>
 
-### 🏗️ Technology Stack
-- **Frontend**: React.js with TypeScript, Material-UI
-- **Backend**: Node.js with Express.js
-- **Database**: MongoDB with Mongoose ODM
-- **Real-time Communication**: Socket.IO
-- **EEG Integration**: Web Serial API for hardware communication
-- **Data Visualization**: Chart.js and D3.js
-- **Authentication**: JWT-based authentication system
+<h2>🛠️ Tech Stack</h2>
 
-### 📁 Project Structure
-```
-cognitive-retraining-platform/
-├── frontend/                 # React frontend application
-├── backend/                  # Node.js backend API
-├── eeg-integration/          # EEG hardware integration modules
-├── training-modules/         # Cognitive training game modules
-├── docs/                     # Documentation and guides
-└── deployment/              # Docker and deployment configurations
-```
+<h3>📱 Mobile Development</h3>
+<ul>
+  <li>Kotlin, Java</li>
+  <li>Android Studio, Jetpack Compose, XML</li>
+  <li>Firebase (Auth, Firestore, Realtime DB, Storage)</li>
+  <li>React Native</li>
+</ul>
 
-### 🚀 Quick Start
-1. Clone the repository
-2. Install dependencies: `npm run install-all`
-3. Start development servers: `npm run dev`
-4. Access the application at `http://localhost:3000`
+<h3>🎨 Frontend</h3>
+<ul>
+  <li>React.js</li>
+  <li>HTML, CSS, JavaScript</li>
+</ul>
 
-### 👥 Target Users
-- **Children with Developmental Disabilities**: Primary users engaging with training modules
-- **Parents/Caregivers**: Monitor child's progress and assist with home training
-- **Clinicians/Therapists**: Professional monitoring, assessment, and treatment planning
-- **Researchers**: Data analysis and treatment effectiveness studies
+<h3>🖥 Backend</h3>
+<ul>
+  <li>Node.js, Express.js</li>
+  <li>Spring Boot</li>
+  <li>PHP, MySQL</li>
+</ul>
 
-### 🏆 SIH 2025 Innovation
-This project addresses the critical need for accessible, technology-enhanced cognitive rehabilitation by combining cutting-edge neurofeedback technology with engaging, evidence-based training protocols.
+<h3>🗄 Database</h3>
+<ul>
+  <li>MongoDB</li>
+  <li>Firebase</li>
+  <li>MySQL</li>
+</ul>
 
----
-**Team**: Sagar Paul & Contributors  
-**Contact**: sagarpaul9475@gmail.com  
-**License**: MIT License
+<h3>⚙ Tools</h3>
+<ul>
+  <li>Git & GitHub</li>
+  <li>Postman</li>
+  <li>VSCode, IntelliJ, Android Studio</li>
+  <li>XAMPP</li>
+</ul>
+
+<hr/>
+
+<h2>📌 About Me</h2>
+<ul>
+  <li>🎯 Passionate Android developer</li>
+  <li>🔭 Working on full-stack travel & hotel management systems</li>
+  <li>📚 Solving DSA in Java & C</li>
+  <li>🏆 Smart India Hackathon 2024 (Team Bug Busters)</li>
+  <li>🥇 Gold badges in Python, Java, C (HackerRank)</li>
+  <li>⭐ 4-star SQL on HackerRank</li>
+</ul>
+
+<hr/>
+
+<h2>💼 Highlighted Projects</h2>
+
+<h3>📱 ChatStar — Chat App</h3>
+<ul>
+  <li>Firebase Auth + Realtime Database</li>
+  <li>Real-time messaging</li>
+  <li>Custom RecyclerView chat UI</li>
+</ul>
+
+<h3>🎵 Music Player App</h3>
+<ul>
+  <li>MediaStore integration</li>
+  <li>Full playback controls</li>
+  <li>Circular playlist</li>
+</ul>
+
+<h3>📚 Notes App (Firebase)</h3>
+<ul>
+  <li>CRUD with Firestore</li>
+  <li>Fragments for Add/Edit/Home</li>
+  <li>MVVM + Repository</li>
+</ul>
+
+<h3>✈ Travel Website (Full-stack)</h3>
+<ul>
+  <li>Node.js + Express.js + MongoDB</li>
+  <li>Login & sign-up with unique ID</li>
+  <li>Travel receipt generator</li>
+  <li>Admin panel + API integration</li>
+</ul>
+
+<hr/>
+
+<h2>🏆 Achievements</h2>
+<ul>
+  <li>Smart India Hackathon 2024 — Cleared Pre-screen & Round 1</li>
+  <li>Gold Badge: Python, Java, C</li>
+  <li>4-Star SQL on HackerRank</li>
+  <li>100% runtime on multiple LeetCode problems</li>
+  <li>Built 10+ real-world projects</li>
+</ul>
+
+<hr/>
+
+<h2>📊 GitHub Stats</h2>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=sagarpaul&show_icons=true&theme=tokyonight&hide_border=true" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sagarpaul&layout=compact&theme=tokyonight&hide_border=true" height="165" />
+</p>
+
+<hr/>
+
+<h2>💬 Let's Connect</h2>
+<ul>
+  <li>Email: <b>your-email@example.com</b></li>
+  <li>LinkedIn: <i>Add your link</i></li>
+  <li>Portfolio: <i>Add your website</i></li>
+</ul>
+
+<p align="center">⭐ Feel free to star my repositories!</p>
