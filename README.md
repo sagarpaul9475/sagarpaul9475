@@ -1,8 +1,4 @@
 <!-- Banner -->
-<p align="center">
-  <img src="https://i.imgur.com/dBaSKWF.gif" width="100%" alt="Banner"/>
-</p>
-
 <h1 align="center">✨ Hi, I'm <b>Sagar Paul</b> ✨</h1>
 <h3 align="center">Android Developer | Full-Stack Developer | Programmer</h3>
 
@@ -29,13 +25,13 @@
 <h2>👨‍💻 About Me</h2>
 
 <ul>
-  <li>🔥 Android Developer (Java + Kotlin)</li>
+  <li>🔥 App Developer (Java + Kotlin, ReactNative)</li>
   <li>🚀 Full-stack developer (Node.js + MongoDB + React)</li>
   <li>📱 Firebase expert (Auth, Firestore, Realtime DB)</li>
   <li>🎯 Solving DSA in Java & C daily</li>
-  <li>🏆 Smart India Hackathon 2024 — Team Bug Busters</li>
+  <li>🏆 Smart India Hackathon 2024 & 2025</li>
   <li>🥇 Gold badges in Java, Python, C — HackerRank</li>
-  <li>⭐ 4-Star SQL on HackerRank</li>
+  <li>⭐ 200+ questions on LeetCode</li>
 </ul>
 
 <hr/>
@@ -126,7 +122,7 @@
 <!-- Trophies -->
 <h2>🏆 GitHub Trophies</h2>
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=sagarpaul&theme=tokyonight&margin-w=10" />
+  <img src="[https://github-profile-trophy.vercel.app/?username=sagarpaul&theme=tokyonight&margin-w=10](https://github.com/users/sagarpaul9475/achievements/yolo)" />
 </p>
 
 <hr/>
