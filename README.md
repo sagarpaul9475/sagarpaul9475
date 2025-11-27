@@ -1,6 +1,6 @@
 <!-- Banner -->
 <h1 align="center">✨ Hi, I'm <b>Sagar Paul</b> ✨</h1>
-<h3 align="center">Android Developer | Full-Stack Developer | Programmer</h3>
+<h3 align="center">App Developer | Full-Stack Developer | Programmer</h3>
 
 <!-- Typing Animation -->
 <p align="center">
