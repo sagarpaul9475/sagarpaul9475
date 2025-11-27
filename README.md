@@ -1,52 +1,144 @@
-# GitHub Action for generating a contribution graph with a snake eating your contributions.
-name: Generate Snake
+<!-- Banner -->
+<p align="center">
+  <img src="https://i.imgur.com/dBaSKWF.gif" width="100%" alt="Banner"/>
+</p>
 
-# Controls when the action will run.
-on:
-  schedule:
-      # every 12 hours
-    - cron: "0 */12 * * *"
+<h1 align="center">✨ Hi, I'm <b>Sagar Paul</b> ✨</h1>
+<h3 align="center">Android Developer | Full-Stack Developer | Programmer</h3>
 
-  # This command allows us to run the Action automatically from the Actions tab.
-  workflow_dispatch:
-  
-  # Also run on every push on the master branch
-  push:
-    branches:
-    - main
+<!-- Typing Animation -->
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?size=22&center=true&width=600&lines=Android+Developer;Full-Stack+Developer;Competitive+Programmer;Firebase+%7C+React+%7C+Node.js+%7C+MongoDB" />
+</p>
 
-# The sequence of runs in this workflow:
-jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+<hr/>
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      - name: Clone repo
-        uses: actions/checkout@v3
-    
-      - name: Generate the snake files in './dist/'
-        uses: Platane/snk@v3
-        id: snake-gif
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            dist/github-contribution-grid-snake.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
-        env:
-           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+<!-- Badges -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" />
+  <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
+  <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
+  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
+</p>
 
-      - name: Show build status
-        run: git status
+<hr/>
 
-      - name: Push new files to the output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
-          commit_message: Update snake animations
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+<!-- About -->
+<h2>👨‍💻 About Me</h2>
+
+<ul>
+  <li>🔥 Android Developer (Java + Kotlin)</li>
+  <li>🚀 Full-stack developer (Node.js + MongoDB + React)</li>
+  <li>📱 Firebase expert (Auth, Firestore, Realtime DB)</li>
+  <li>🎯 Solving DSA in Java & C daily</li>
+  <li>🏆 Smart India Hackathon 2024 — Team Bug Busters</li>
+  <li>🥇 Gold badges in Java, Python, C — HackerRank</li>
+  <li>⭐ 4-Star SQL on HackerRank</li>
+</ul>
+
+<hr/>
+
+<!-- Skills Icons -->
+<h2>🛠️ Tech Stack</h2>
+
+<h3>📱 Mobile Development</h3>
+<p>
+  <img src="https://skillicons.dev/icons?i=kotlin,java,androidstudio,firebase" />
+</p>
+
+<h3>🎨 Frontend</h3>
+<p>
+  <img src="https://skillicons.dev/icons?i=html,css,js,react" />
+</p>
+
+<h3>🖥 Backend</h3>
+<p>
+  <img src="https://skillicons.dev/icons?i=nodejs,express,spring,php" />
+</p>
+
+<h3>🗄 Database</h3>
+<p>
+  <img src="https://skillicons.dev/icons?i=mysql,mongodb,firebase" />
+</p>
+
+<h3>⚙ Tools</h3>
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,postman,androidstudio" />
+</p>
+
+<hr/>
+
+<!-- Projects -->
+<h2>🚀 Highlighted Projects</h2>
+
+<h3>📱 ChatStar — Real-time Chat App</h3>
+<ul>
+  <li>Firebase Auth + Realtime DB</li>
+  <li>Real-time chat + custom UI</li>
+</ul>
+
+<h3>🎵 Music Player App</h3>
+<ul>
+  <li>MediaStore</li>
+  <li>Circular playlist</li>
+  <li>Full controls</li>
+</ul>
+
+<h3>📚 Notes App (Firebase + MVVM)</h3>
+<ul>
+  <li>Firestore + Repository Pattern</li>
+  <li>Fragment-based UI</li>
+</ul>
+
+<h3>✈ Full-Stack Travel Website</h3>
+<ul>
+  <li>Node.js + Express + MongoDB</li>
+  <li>User login + unique receipt ID</li>
+  <li>Admin dashboard + API integration</li>
+</ul>
+
+<hr/>
+
+<!-- GitHub Stats -->
+<h2>📊 GitHub Stats</h2>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=sagarpaul&show_icons=true&theme=tokyonight&hide_border=true" height="165" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sagarpaul&theme=tokyonight&hide_border=true" height="165" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sagarpaul&layout=compact&theme=tokyonight&hide_border=true" height="165" />
+</p>
+
+<hr/>
+
+<!-- Snake Animation -->
+<h2>🐍 Contribution Snake</h2>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" />
+</p>
+
+<hr/>
+
+<!-- Trophies -->
+<h2>🏆 GitHub Trophies</h2>
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=sagarpaul&theme=tokyonight&margin-w=10" />
+</p>
+
+<hr/>
+
+<!-- Connect -->
+<h2>📬 Connect With Me</h2>
+<ul>
+  <li>Email: <b>sagarpaul9475@gmail.com</b></li>
+  <li>LinkedIn: <i>https://www.linkedin.com/in/sagar-paul-2b620928b/</i></li>
+  <li>Portfolio: <i>https://portfolio-me-sable.vercel.app/</i></li>
+</ul>
+
+<p align="center">
+  ⭐ <b>Thanks for visiting! Star my repositories to support my work!</b> ⭐
+</p>
