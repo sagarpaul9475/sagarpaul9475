@@ -4,7 +4,7 @@
 
 <!-- Typing Animation -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=22&center=true&width=600&lines=Android+Developer;Full-Stack+Developer;Competitive+Programmer;Firebase+%7C+React+%7C+Node.js+%7C+MongoDB" />
+  <img src="https://readme-typing-svg.herokuapp.com?size=22&center=true&width=600&lines=App+Developer;Full-Stack+Developer;Competitive+Programmer;Firebase+%7C+React+%7C+Node.js+%7C+MongoDB" />
 </p>
 
 <hr/>
