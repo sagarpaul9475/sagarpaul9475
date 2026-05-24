@@ -133,6 +133,7 @@
   <li>Email: <b>sagarpaul9475@gmail.com</b></li>
   <li>LinkedIn: <i>https://www.linkedin.com/in/sagar-paul-2b620928b/</i></li>
   <li>Portfolio: <i>https://portfolio-me-sable.vercel.app/</i></li>
+  <li>Resume: <i>https://app.enhancv.com/resume/6a13487f631993668bfb3d2a</i></li>
 </ul>
 
 <p align="center">
